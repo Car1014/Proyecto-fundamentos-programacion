@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header> 
+        <p>Encriptador de texto</p>
+    </header>
+    <main>
+        <section>
+            <textarea cols="40" rows="12" placeholder="Ingrese el texto aquí" id="textarea" ></textarea>
+            <p>	&#9432; Sólo letras minúsculas y sin acentos</p>
+            <div>
+                <button id="botonE" onclick="encriptar()">Encriptar</button>
+                <button id="botonD" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <span id="resultado">Resultado?</span>
+            <div>
+                <img alt="Imagen buscando texto">
+                <span>Ningún mensaje fue encontrado</span>
+                <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+            </div>
+            <div>
+                <button>Copiar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="resultados" class="resultados">
+        Respuesta
+        
+    </div>
+
+    <script src="./js/escriptar.js"></script>
+    
+</body>
+</html>

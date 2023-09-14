@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color del Body</title>
+    <style>
+        #cambiarColor{
+            background-color: aquamarine;
+            font-size: 4rem;
+            border-radius: 2rem;
+        }
+        .color{
+
+            text-align: center;
+            margin: 7rem;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        <button id="cambiarColor">Cambiar Color</button>
+    </div>
+
+    <script>
+       
+        function cambiarColorFondo() {
+            
+            const colores = ["#FF5733", "#33FF57", "#5733FF", "#FFFF33", "#33FFFF", "#FF33FF"];
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            document.body.style.backgroundColor = colorAleatorio;
+        }
+        document.getElementById("cambiarColor").addEventListener("click", cambiarColorFondo);
+    </script>
+</body>
+</html>

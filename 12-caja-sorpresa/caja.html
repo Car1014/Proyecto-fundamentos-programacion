@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja sorpresa</title>
+
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .caja, .cajaOculta{
+            width: 150px;
+        }
+        .caja:hover, .cajaOculta:hover{
+            cursor: pointer;
+        }
+        .cajaOculta, .contenido,.sorpresa{
+            display: none;
+        }
+        .contenido{
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 255, 0.493);
+            width: 100vw;
+            height: 100vh;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+        }
+        .sorpresa{
+            width: 500px;
+            height: 70vh;
+            background: #40adec;
+        }
+
+        .perdiste{
+            width: 500px;
+            height: 70vh;
+            background: #40adec;
+        }
+
+        .cont{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 15rem;
+            background-color: rgb(240, 240, 162);
+            
+        }
+        .cajas{
+            text-align: center;
+            margin: 2rem;
+            background-color: rgb(67, 171, 171);
+            border-radius: 2rem;
+            padding: 1rem;
+
+        }
+        .perdiste{
+            font-size: 5rem;
+            color: rgb(243, 248, 83);
+        }
+
+
+        .contenido2{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="cajas">
+            <img src="caja1.png" alt="" class="caja" id="caja1">
+            <img src="caja2.png" alt="" class="cajaOculta" id="caja01">
+        </div>
+        <div class="cajas">
+            <img src="caja1.png" alt="" class="caja" id="caja2">
+            <img src="caja2.png" alt="" class="cajaOculta" id="caja02">
+        </div>
+        <div class="cajas">
+            <img src="caja1.png" alt="" class="caja" id="caja3">
+            <img src="caja2.png" alt="" class="cajaOculta" id="caja03">
+        </div>
+        <div class="cajas">
+            <img src="caja1.png" alt="" class="caja" id="caja4">
+            <img src="caja2.png" alt="" class="cajaOculta" id="caja04">
+        </div>
+        <div class="cajas">
+            <img src="caja1.png" alt="" class="caja" id="caja5">
+            <img src="caja2.png" alt="" class="cajaOculta" id="caja05">
+        </div>
+        <div class="cajas">
+            <img src="caja1.png" alt="" class="caja" id="caja6">
+            <img src="caja2.png" alt="" class="cajaOculta" id="caja06">
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="sorpresa">
+            ¡Ganaste!
+        </div>
+    </div>
+    <div class="contenido2">
+        <div class="perdiste">
+            ¡perdiste!
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("keyup",(evento)=>{
+            if(evento.keyCode === 27){
+                document.getElementsByClassName("contenido")[0].style.display = 'none';
+            }
+        })
+
+        function abrir(evento){
+            document.getElementById("caja1").style.display = 'none';
+            document.getElementById("caja01").style.display = 'inline';
+            document.getElementsByClassName("contenido")[0].style.display = "flex";
+            document.getElementsByClassName("sorpresa")[0].style.display = "inline";
+
+            document.getElementsByClassName("contenido")[0].addEventListener('click',(evento)=>{
+                if(evento.target.closest(".contenido")){
+                    document.getElementsByClassName("contenido")[0].style.display = 'none';
+                }
+            })
+
+        }
+
+        function abrir1(evento){
+            document.getElementById("caja2").style.display = 'none';
+            document.getElementById("caja02").style.display = 'inline';
+            document.getElementsByClassName("contenido2")[0].style.display = "flex";
+            document.getElementsByClassName("perdiste")[0].style.display = "inline";
+
+            document.getElementsByClassName("contenido2")[0].addEventListener('click',(evento)=>{
+                if(evento.target.closest(".contenido2")){
+                    document.getElementsByClassName("contenido2")[0].style.display = 'none';
+                }
+            })
+
+        }
+
+        function abrir2(evento){
+            document.getElementById("caja3").style.display = 'none';
+            document.getElementById("caja03").style.display = 'inline';
+            document.getElementsByClassName("contenido2")[0].style.display = "flex";
+            document.getElementsByClassName("perdiste")[0].style.display = "inline";
+
+            document.getElementsByClassName("contenido2")[0].addEventListener('click',(evento)=>{
+                if(evento.target.closest(".contenido2")){
+                    document.getElementsByClassName("contenido2")[0].style.display = 'none';
+                }
+            })
+
+        }
+
+        function abrir3(evento){
+            document.getElementById("caja4").style.display = 'none';
+            document.getElementById("caja04").style.display = 'inline';
+            document.getElementsByClassName("contenido2")[0].style.display = "flex";
+            document.getElementsByClassName("perdiste")[0].style.display = "inline";
+
+            document.getElementsByClassName("contenido2")[0].addEventListener('click',(evento)=>{
+                if(evento.target.closest(".contenido2")){
+                    document.getElementsByClassName("contenido2")[0].style.display = 'none';
+                }
+            })
+
+        }
+
+        function abrir4(evento){
+            document.getElementById("caja5").style.display = 'none';
+            document.getElementById("caja05").style.display = 'inline';
+            document.getElementsByClassName("contenido2")[0].style.display = "flex";
+            document.getElementsByClassName("perdiste")[0].style.display = "inline";
+
+            document.getElementsByClassName("contenido2")[0].addEventListener('click',(evento)=>{
+                if(evento.target.closest(".contenido2")){
+                    document.getElementsByClassName("contenido2")[0].style.display = 'none';
+                }
+            })
+
+        }
+
+        function abrir5(evento){
+            document.getElementById("caja6").style.display = 'none';
+            document.getElementById("caja06").style.display = 'inline';
+            document.getElementsByClassName("contenido2")[0].style.display = "flex";
+            document.getElementsByClassName("perdiste")[0].style.display = "inline";
+
+            document.getElementsByClassName("contenido2")[0].addEventListener('click',(evento)=>{
+                if(evento.target.closest(".contenido2")){
+                    document.getElementsByClassName("contenido2")[0].style.display = 'none';
+                }
+            })
+
+        }
+
+        document.getElementById("caja1").addEventListener("click",abrir);
+        document.getElementById("caja01").addEventListener("click",abrir);
+
+        document.getElementById("caja2").addEventListener("click",abrir1);
+        document.getElementById("caja02").addEventListener("click",abrir1);
+
+        document.getElementById("caja3").addEventListener("click",abrir2);
+        document.getElementById("caja03").addEventListener("click",abrir2);
+
+        document.getElementById("caja4").addEventListener("click",abrir3);
+        document.getElementById("caja04").addEventListener("click",abrir3);
+
+        document.getElementById("caja5").addEventListener("click",abrir4);
+        document.getElementById("caja05").addEventListener("click",abrir4);
+
+        document.getElementById("caja6").addEventListener("click",abrir5);
+        document.getElementById("caja06").addEventListener("click",abrir5);
+    </script>
+</body>
+</html>

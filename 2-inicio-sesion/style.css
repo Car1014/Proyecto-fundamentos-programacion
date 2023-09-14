@@ -1,0 +1,79 @@
+body{
+    background-color: #ffffff;
+}
+
+.titulo{
+    text-align: center;
+    background-image: radial-gradient(circle at 92.78% 50%, #f6a4ff 0, #a37eff 25%, #5053cc 50%, #002a81 75%, #000042 100%);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin: .7rem;
+    
+}
+.titulo h1{
+    font-size: 2rem;
+}
+
+.inicios{
+    text-align: center;
+    margin: 3rem;
+}
+
+.sesion{
+    text-align: center;
+    background-color: rgb(216, 171, 171);
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+
+    
+
+}
+.sesion input{
+    border: none;
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 70%;
+    height: 2rem;
+    background-color: rgb(255, 255, 255);
+
+}
+.sesion{
+    border: 3px solid black;
+    border-radius: 2rem;
+
+}
+.sesion fieldset{
+    border: none;
+}
+
+.sesion p{
+    text-align: left;
+}
+
+.sesion button{
+    text-align: center;
+    width: 40%;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 2rem;
+    background-color: #f4f003;
+    padding-bottom: auto;
+    margin-bottom:2rem;
+
+}
+.inicios{
+    font-size: 1.5rem;
+    border: solid black;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}  
+.bajo{
+    background-image: radial-gradient(circle at 92.78% 50%, #f6a4ff 0, #a37eff 25%, #5053cc 50%, #002a81 75%, #000042 100%);
+    width: 120%;
+    height: 8rem;
+    margin-top: 10rem;
+}

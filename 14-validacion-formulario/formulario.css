@@ -1,0 +1,28 @@
+form{
+    background-color: antiquewhite;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 4rem;
+    border: 1px solid black;
+}
+
+.inputs-container{
+    padding-top: 2rem;
+    padding-left: 9rem;
+    padding-bottom: 2rem;
+    text-align: right;
+    padding-right: 8rem;
+    
+}
+
+#btn-ingresar{
+    
+    border: none;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+}
+
+input{
+    width: 70%;
+}

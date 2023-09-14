@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>Pagina web</h1>
+    </div>
+
+    <div class="inicios">
+        <h2>Inicio de sesion</h2>
+    </div>
+
+    <div class="sesion">
+        <form action="formulary">
+            <fieldset>
+                <p>Correo</p>
+                <input type="email" placeholder="Correo" id="email">
+                <p>Contraseña</p>
+                <input type="password" name="password" id="contrasena" placeholder="password">
+
+            </fieldset>
+        </form>
+        <button id="btn-ingresar">enviar</button>
+    </div>
+
+    <div class="bajo">
+        t
+    </div>
+    
+
+    <script>
+        function comprobar(){
+            const emailI=document.getElementById('email')
+            const contrasenaI=document.getElementById('contrasena')
+            const contrasena='1234'
+            const usuario='carlos@gmail.com'
+
+            try {
+                if(contrasena==contrasenaI.value){
+                    alert("contraseña correcta");
+                }else{
+                    throw new Error("error")
+                }
+                if(emailI.value==usuario){
+                alert("Usario correcto");
+                }else{
+                    throw new Error("Error")
+                }
+            } catch (error) {
+                alert("Datos incorrectos");
+                
+            }
+            
+
+
+
+        }
+        document.getElementById('btn-ingresar').addEventListener('click',comprobar);
+
+    </script>
+
+</body>
+</html>
